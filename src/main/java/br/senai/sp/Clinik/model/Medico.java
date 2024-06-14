@@ -22,10 +22,10 @@ public class Medico {
 	
 	private int crm;
 	
-	@ManyToOne
+	/*@ManyToOne
 	@JoinColumn(name="id_especialidade")
 	@JsonIgnore
-	private Especialidade especialidade;
+	private Especialidade especialidade;*/
 
 	@NotNull
 	private String telefone;
@@ -62,13 +62,13 @@ public class Medico {
 		this.telefone = telefone;
 	}
 
-	public Especialidade getEspecialidade() {
+	/*public Especialidade getEspecialidade() {
 		return especialidade;
 	}
 
 	public void setEspecialidade(Especialidade especialidade) {
 		this.especialidade = especialidade;
 	}
-	
+	*/
 	
 }
