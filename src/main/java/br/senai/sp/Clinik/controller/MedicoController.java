@@ -49,6 +49,7 @@ public class MedicoController {
 			Medico medico = medicoData.get();
 			medico.setNome(med.getNome());
 			medico.setCrm(med.getCrm());
+			medico.setTelefone(med.getTelefone());
 			
 			return new ResponseEntity<>(repository.save(medico), HttpStatus.OK);
 		}else {
